@@ -1,2 +1,2 @@
-# starter
-Our starter the,e
+# amillionmonkeys starter theme
+

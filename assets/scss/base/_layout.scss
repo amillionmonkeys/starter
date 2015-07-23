@@ -1,0 +1,23 @@
+.outer-container {
+	@include media($gt-small) {
+		@include outer-container;
+	}
+}
+
+.row {
+	@include media($gt-small) {
+		@include row;
+	}
+}
+
+.third-width {
+	@include media($gt-small) {
+		@include span-columns(4);
+	}
+}
+
+.half-width {
+	@include media($gt-small) {
+		@include span-columns(6);
+	}
+}
