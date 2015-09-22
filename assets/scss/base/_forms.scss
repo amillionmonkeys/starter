@@ -27,7 +27,7 @@ label {
 }
 
 #{$all-text-inputs},
-select[multiple=multiple],
+select,
 textarea {
   background-color: $base-background-color;
   border: $base-border;
@@ -39,6 +39,7 @@ textarea {
   padding: $base-spacing / 3;
   transition: border-color;
   width: 100%;
+  margin-bottom: $base-spacing / 2; 
   &:hover {
     border-color: darken($base-border-color, 10%);
   }

@@ -1,6 +1,10 @@
 /*! responsive-nav.js 1.0.39 by @viljamis */
 
-.nav-collapse ul {
+.main-nav {
+  border: 1px solid $light-gray;
+  margin-bottom: $base-spacing;
+}
+.main-nav ul {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,12 +12,15 @@
   list-style: none;
 }
 
-.nav-collapse li {
+.main-nav li {
   width: 100%;
   display: block;
 }
-
-.js .nav-collapse {
+.main-nav li a {
+  padding: 1em;
+  display:block;
+}
+.js .main-nav {
   clip: rect(0 0 0 0);
   max-height: 0;
   position: absolute;
@@ -22,7 +29,7 @@
   zoom: 1;
 }
 
-.nav-collapse.opened {
+.main-nav.opened {
   max-height: 9999px;
 }
 
@@ -37,10 +44,14 @@
 }
 
 @media screen and (min-width: $small + 1px) {
-  .js .nav-collapse {
+  .js .main-nav {
     position: relative;
   }
-  .js .nav-collapse.closed {
+  .main-nav li {
+    width: auto;
+    float:left;
+  }
+  .js .main-nav.closed {
     max-height: none;
   }
   .nav-toggle {

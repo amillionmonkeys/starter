@@ -10,6 +10,12 @@
 	}
 }
 
+.two-thirds-width {
+	@include media($gt-small) {
+		@include span-columns(8);
+	}
+}
+
 .third-width {
 	@include media($gt-small) {
 		@include span-columns(4);
@@ -20,4 +26,8 @@
 	@include media($gt-small) {
 		@include span-columns(6);
 	}
+}
+
+.clearfix {
+	@include clearfix();
 }

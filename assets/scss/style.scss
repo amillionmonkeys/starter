@@ -1,6 +1,8 @@
 @import "lib/bourbon";
 @import "neat-helpers";
 
+@import "base/normalize";
+
 @import "base/variables";
 @import "base/grid-settings";
 @import "base/mixins";

@@ -15,6 +15,7 @@ h5 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
+  margin-top: $small-spacing;
   margin-bottom: $small-spacing;
 }
 
@@ -27,25 +28,25 @@ h1 {
 h2 {
   @include font-size($h2-small-screen);
   @include media($gt-small){
-    @include font-size($h1-size);
+    @include font-size($h2-size);
   }
 }
 h3 {
   @include font-size($h3-small-screen);
   @include media($gt-small){
-    @include font-size($h1-size);
+    @include font-size($h3-size);
   }
 }
 h4 {
   @include font-size($h4-small-screen);
   @include media($gt-small){
-    @include font-size($h1-size);
+    @include font-size($h4-size);
   }
 }
 h5 {
   @include font-size($h5-small-screen);
   @include media($gt-small){
-    @include font-size($h1-size);
+    @include font-size($h5-size);
   }
 }
 
