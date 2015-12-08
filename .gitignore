@@ -27,3 +27,14 @@
 ehthumbs.db
 Thumbs.db
 assets/.DS_Store
+
+# Sass #
+######################
+.sass-cache
+config.codekit
+
+
+# Sublime Stuff#
+######################
+*.sublime-workspace
+*.sublime-project
